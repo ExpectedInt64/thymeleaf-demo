@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="uname">Username:</label>
+<input type="text" id="uname" name="uname"><br><br>
+<label for="pname">Password:</label>
+<input type="password" id="pname" name="pname"><br><br>
+<button type="submit" th:text="GoBack" th:onclick="|window.location.href='@{/}'|"></button>
+</body>
+</html>

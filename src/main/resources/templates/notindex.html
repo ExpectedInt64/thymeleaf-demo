@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Hello Pepega</h1>
+<br>
+<h2 th:text="${testcookie}"></h2>
+<h3 th:text="${getUsers}"></h3>
+<button type="submit" th:text="${loginStatus}" th:onclick="|window.location.href='@{/{log}(log=${loginStatus})}'|"></button>
+</body>
+</html>
